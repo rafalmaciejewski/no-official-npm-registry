@@ -1,0 +1,25 @@
+sudo: false
+dist: xenial
+
+language: node_js
+node_js:
+- "12"
+
+cache:
+  directories:
+  - "node_modules"
+
+jobs:
+  include:
+  - stage: deploy
+    name: npm
+    deploy:
+      provider: npm
+      email: $NPM_EMAIL
+      api_key: $NPM_TOKEN
+      tag: latest
+      on:
+        tags: true
+stages:
+- name: deploy
+  if: tag IS present

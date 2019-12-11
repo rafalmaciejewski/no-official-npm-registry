@@ -1,0 +1,29 @@
+{
+  "name": "no-official-npm-registry",
+  "version": "1.0.0",
+  "description": "CLI tool that verifies npm package version",
+  "keywords": [
+    "cli"
+  ],
+  "homepage": "https://github.com/rafalmaciejewski/no-official-npm-registry#readme",
+  "bugs": {
+    "url": "https://github.com/rafalmaciejewski/no-official-npm-registry/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafalmaciejewski/no-official-npm-registry.git"
+  },
+  "license": "MIT",
+  "author": "Rafał Maciejewski",
+  "main": "lib/index.js",
+  "bin": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1",
+    "node-emoji": "^1.10.0",
+    "pjson": "^1.0.9"
+  }
+}
